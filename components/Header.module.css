@@ -1,0 +1,170 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-deep-green);
+    height: var(--nav-height-desktop);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding-desktop);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    transition: opacity 0.2s ease;
+}
+
+.logo:hover {
+    opacity: 0.9;
+}
+
+.desktopNav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.navLink {
+    color: var(--color-off-white);
+    font-weight: var(--weight-medium);
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.navLink:hover {
+    color: var(--color-warm-gold);
+}
+
+.ctaButton {
+    background-color: var(--color-bold-red);
+    color: var(--color-off-white);
+    padding: 12px var(--space-3);
+    border-radius: var(--space-1);
+    font-weight: var(--weight-medium);
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.ctaButton:hover {
+    background-color: #A01218;
+}
+
+/* Mobile Menu Button */
+.mobileMenuButton {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-1);
+}
+
+.iconMenu,
+.iconClose {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-off-white);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.iconMenu::before,
+.iconMenu::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-off-white);
+    transition: all 0.3s ease;
+}
+
+.iconMenu::before {
+    top: -8px;
+}
+
+.iconMenu::after {
+    top: 8px;
+}
+
+.iconClose {
+    background-color: transparent;
+}
+
+.iconClose::before,
+.iconClose::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-off-white);
+    top: 0;
+}
+
+.iconClose::before {
+    transform: rotate(45deg);
+}
+
+.iconClose::after {
+    transform: rotate(-45deg);
+}
+
+/* Mobile Navigation */
+.mobileNav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-deep-green);
+    padding: var(--space-3) var(--padding-mobile);
+    gap: var(--space-2);
+}
+
+.mobileNavLink {
+    color: var(--color-off-white);
+    font-weight: var(--weight-medium);
+    font-size: 16px;
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobileCtaButton {
+    background-color: var(--color-bold-red);
+    color: var(--color-off-white);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--space-1);
+    font-weight: var(--weight-medium);
+    text-align: center;
+    margin-top: var(--space-2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .header {
+        height: var(--nav-height-mobile);
+    }
+
+    .container {
+        padding: 0 var(--padding-mobile);
+    }
+
+    .desktopNav {
+        display: none;
+    }
+
+    .mobileMenuButton {
+        display: block;
+    }
+
+    .mobileNav {
+        display: flex;
+    }
+}

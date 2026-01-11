@@ -1,0 +1,147 @@
+.main {
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--color-off-white);
+    padding: var(--space-6) 0 var(--space-5) 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: var(--space-3);
+}
+
+.heroDescription {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: var(--font-body);
+    color: var(--color-charcoal);
+    line-height: 1.8;
+}
+
+/* Section Styles */
+.section {
+    padding: var(--space-5) 0;
+}
+
+.currentSection {
+    background-color: #FFF9F0;
+}
+
+.pastSection {
+    background-color: var(--color-off-white);
+}
+
+.sectionHeading {
+    font-size: var(--font-h2-desktop);
+    margin-bottom: var(--space-4);
+    text-align: center;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--gap-card-desktop);
+    margin-top: var(--space-4);
+}
+
+/* Badge Styles */
+.badge {
+    display: inline-block;
+    padding: var(--space-1) var(--space-2);
+    background-color: var(--color-bold-red);
+    color: white;
+    font-size: var(--font-small);
+    font-weight: var(--weight-medium);
+    border-radius: var(--space-1);
+    margin-bottom: var(--space-2);
+}
+
+.badgeUpcoming {
+    background-color: var(--color-deep-green);
+}
+
+.badgePast {
+    background-color: var(--color-soft-gray);
+    color: var(--color-charcoal);
+}
+
+/* Conference Card Details */
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    margin: var(--space-2) 0;
+}
+
+.detailItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--font-body);
+    color: var(--color-charcoal);
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.description {
+    margin: var(--space-2) 0 var(--space-3) 0;
+    color: var(--color-charcoal);
+    line-height: 1.6;
+}
+
+/* Flier Thumbnail */
+.flierThumbnail {
+    width: 100%;
+    margin-bottom: var(--space-3);
+    border-radius: var(--space-1);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flierImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Empty State */
+.emptyState {
+    text-align: center;
+    padding: var(--space-6) 0;
+}
+
+.emptyState h2 {
+    margin-bottom: var(--space-2);
+}
+
+.emptyState p {
+    font-size: var(--font-body);
+    color: var(--color-charcoal);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: var(--space-5) 0 var(--space-4) 0;
+    }
+
+    .sectionHeading {
+        font-size: var(--font-h2-mobile);
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: var(--gap-card-mobile);
+    }
+
+    .section {
+        padding: var(--space-4) 0;
+    }
+}

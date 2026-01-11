@@ -1,0 +1,65 @@
+.qrContainer {
+    background: white;
+    padding: var(--space-4);
+    border-radius: var(--radius-card);
+    border: 1px solid var(--color-soft-gray);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.qrContainer h3 {
+    margin-bottom: var(--space-2);
+}
+
+.instruction {
+    font-size: 16px;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-3);
+    line-height: 1.6;
+}
+
+.qrCodeWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-3);
+    background-color: white;
+    border-radius: var(--space-1);
+    margin-bottom: var(--space-3);
+}
+
+.qrCode {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.url {
+    font-size: 14px;
+    color: var(--color-charcoal);
+    margin-top: var(--space-2);
+}
+
+.urlText {
+    color: var(--color-deep-green);
+    font-weight: var(--weight-medium);
+    word-break: break-all;
+}
+
+.loading {
+    text-align: center;
+    padding: var(--space-4);
+    color: var(--color-charcoal);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .qrContainer {
+        padding: var(--space-3);
+    }
+
+    .qrCodeWrapper {
+        padding: var(--space-2);
+    }
+}

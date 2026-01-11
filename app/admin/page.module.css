@@ -1,0 +1,131 @@
+.dashboard {
+    max-width: 1200px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: var(--weight-heading-1);
+    color: var(--color-deep-green);
+    margin-bottom: var(--space-1);
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--color-soft-gray);
+    margin-bottom: var(--space-5);
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-3);
+    margin-bottom: var(--space-5);
+}
+
+.statCard {
+    background: white;
+    padding: var(--space-4);
+    border-radius: var(--radius-card);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.statCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.statIcon {
+    font-size: 48px;
+}
+
+.statContent {
+    flex: 1;
+}
+
+.statNumber {
+    font-size: 36px;
+    font-weight: var(--weight-heading-1);
+    color: var(--color-bold-red);
+    margin: 0;
+    line-height: 1;
+}
+
+.statLabel {
+    font-size: 14px;
+    color: var(--color-charcoal);
+    margin: var(--space-1) 0 0 0;
+    font-weight: var(--weight-medium);
+}
+
+.quickLinks {
+    margin-top: var(--space-5);
+}
+
+.sectionTitle {
+    font-size: 24px;
+    font-weight: var(--weight-heading-2);
+    color: var(--color-deep-green);
+    margin-bottom: var(--space-3);
+}
+
+.linksGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-3);
+}
+
+.linkCard {
+    background: white;
+    padding: var(--space-4);
+    border-radius: var(--radius-card);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    text-decoration: none;
+    color: var(--color-charcoal);
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.linkCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border-color: var(--color-deep-green);
+}
+
+.linkIcon {
+    font-size: 32px;
+}
+
+.linkText {
+    font-size: 15px;
+    font-weight: var(--weight-medium);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .title {
+        font-size: var(--font-h1-mobile);
+    }
+
+    .sectionTitle {
+        font-size: var(--font-h2-mobile);
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .linksGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .statNumber {
+        font-size: var(--font-h2-mobile);
+    }
+}

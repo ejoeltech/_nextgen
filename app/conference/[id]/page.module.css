@@ -1,0 +1,144 @@
+.main {
+    min-height: 100vh;
+}
+
+.section {
+    padding: var(--space-5) 0;
+}
+
+.hero {
+    background-color: var(--color-off-white);
+    padding: var(--space-6) 0 var(--space-5) 0;
+}
+
+.hero h1 {
+    margin-bottom: var(--space-3);
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+}
+
+.detailItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.detailText {
+    font-size: 18px;
+    font-weight: var(--weight-medium);
+    color: var(--color-charcoal);
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-charcoal);
+}
+
+.conferenceContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-5);
+    align-items: start;
+}
+
+.conferenceInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.conferenceInfo h1 {
+    text-align: left;
+}
+
+.conferenceInfo .details {
+    justify-content: flex-start;
+}
+
+.conferenceInfo .description {
+    text-align: left;
+    margin: 0;
+}
+
+.flierContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flierImage {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: var(--radius-card);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.qrSection {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.qrSection h2 {
+    margin-bottom: var(--space-2);
+}
+
+.qrDescription {
+    text-align: center;
+    font-size: 16px;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-4);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .conferenceContent {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .conferenceInfo h1 {
+        text-align: center;
+    }
+
+    .conferenceInfo .details {
+        justify-content: center;
+    }
+
+    .conferenceInfo .description {
+        text-align: center;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-2);
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .detailText {
+        font-size: 16px;
+    }
+
+    .flierImage {
+        max-width: 100%;
+    }
+}

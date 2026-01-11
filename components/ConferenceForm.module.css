@@ -1,0 +1,139 @@
+.formContainer {
+  background: white;
+  padding: var(--space-4);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-soft-gray);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formContainer h3 {
+  margin-bottom: var(--space-3);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.formGroup label {
+  font-weight: var(--weight-medium);
+  color: var(--color-charcoal);
+  font-size: 16px;
+}
+
+.input {
+  padding: var(--space-2);
+  border: 1px solid var(--color-soft-gray);
+  border-radius: var(--space-1);
+  font-size: 16px;
+  font-family: var(--font-family);
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-deep-green);
+}
+
+.input:disabled {
+  background-color: var(--color-off-white);
+  cursor: not-allowed;
+}
+
+.radioGroup {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-1);
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  cursor: pointer;
+  font-weight: var(--weight-regular);
+}
+
+.radioLabel input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--color-deep-green);
+}
+
+.radioLabel span {
+  color: var(--color-charcoal);
+}
+
+
+.submitButton {
+  background-color: var(--color-bold-red);
+  color: var(--color-off-white);
+  padding: var(--space-2) var(--space-4);
+  border: none;
+  border-radius: var(--space-1);
+  font-size: var(--font-body);
+  font-weight: var(--weight-medium);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: var(--space-2);
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: #A01218;
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: var(--color-bold-red);
+  font-size: 14px;
+  padding: var(--space-2);
+  background-color: rgba(196, 22, 28, 0.1);
+  border-radius: var(--space-1);
+  border-left: 3px solid var(--color-bold-red);
+}
+
+.successMessage {
+  background: white;
+  padding: var(--space-4);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-soft-gray);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.successMessage h3 {
+  margin-bottom: var(--space-2);
+  font-size: var(--font-h3-desktop);
+}
+
+.successMessage p {
+  font-size: var(--font-body);
+  line-height: 1.6;
+  color: var(--color-charcoal);
+}
+
+@media (max-width: 768px) {
+
+  .formContainer,
+  .successMessage {
+    padding: var(--space-3);
+  }
+
+  .successMessage h3 {
+    font-size: var(--font-h3-mobile);
+  }
+}

@@ -1,0 +1,268 @@
+.hero {
+    background-color: var(--color-off-white);
+    padding: var(--space-5) 0;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.heroContent {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding-desktop);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-5);
+    align-items: center;
+}
+
+.heroText {
+    text-align: left;
+}
+
+.heroHeading {
+    font-size: var(--font-h1-desktop);
+    font-weight: var(--weight-heading-1);
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-3);
+    line-height: 1.1;
+}
+
+.highlight {
+    color: var(--color-deep-green);
+}
+
+.heroSubheading {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-4);
+    max-width: 540px;
+}
+
+.heroButtons {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+}
+
+.heroImage {
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-image);
+    object-fit: cover;
+}
+
+/* Conference Hero */
+.conferenceHero {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding-desktop);
+}
+
+.conferenceHeroContent {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: var(--space-5);
+    align-items: start;
+}
+
+.conferenceHeroImage {
+    position: relative;
+}
+
+.conferenceFlier {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-image);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+.conferenceHeroText {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.conferenceHeroHeading {
+    font-size: var(--font-h1-desktop);
+    font-weight: var(--weight-heading-1);
+    color: var(--color-deep-green);
+    line-height: 1.1;
+    margin: 0;
+}
+
+.conferenceHeroDetails {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.conferenceHeroDetail {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: 18px;
+    color: var(--color-charcoal);
+}
+
+.conferenceHeroIcon {
+    font-size: 24px;
+}
+
+.conferenceHeroDescription {
+    font-size: var(--font-body);
+    line-height: 1.7;
+    color: var(--color-charcoal);
+    margin: 0;
+}
+
+.conferenceHeroButtons {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    margin-top: var(--space-2);
+}
+
+/* Sections */
+.section {
+    padding: var(--space-5) 0;
+}
+
+.sectionHeading {
+    text-align: center;
+    margin-bottom: var(--space-4);
+}
+
+/* Value Pillars */
+.pillars {
+    background-color: white;
+}
+
+.pillarsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap-card-desktop);
+}
+
+.pillarIcon {
+    font-size: 48px;
+    margin-bottom: var(--space-2);
+}
+
+/* Highlight Section */
+.highlight {
+    background-color: var(--color-off-white);
+}
+
+.highlightContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-5);
+    align-items: center;
+}
+
+.highlightText {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.highlightText h2 {
+    margin-bottom: var(--space-2);
+}
+
+.highlightText p {
+    line-height: 1.7;
+}
+
+/* CTA Section */
+.cta {
+    background-color: white;
+    padding: var(--space-6) 0;
+}
+
+.ctaHeading {
+    color: var(--color-deep-green);
+    margin-bottom: var(--space-2);
+}
+
+.ctaText {
+    font-size: 20px;
+    margin-bottom: var(--space-4);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding: var(--space-4) 0;
+    }
+
+    .heroContent {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+        padding: 0 var(--padding-mobile);
+    }
+
+    .heroHeading {
+        font-size: var(--font-h1-mobile);
+    }
+
+    .heroSubheading {
+        font-size: 16px;
+    }
+
+    .heroImage {
+        order: -1;
+    }
+
+    .pillarsGrid {
+        grid-template-columns: 1fr;
+        gap: var(--gap-card-mobile);
+    }
+
+    .highlightContent {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .highlightImage {
+        order: -1;
+    }
+
+    .ctaText {
+        font-size: 16px;
+    }
+
+    /* Conference Hero Mobile */
+    .conferenceHeroContent {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+        padding: 0 var(--padding-mobile);
+    }
+
+    .conferenceHeroImage {
+        order: -1;
+    }
+
+    .conferenceHeroHeading {
+        font-size: var(--font-h1-mobile);
+    }
+
+    .conferenceHeroDetail {
+        font-size: 16px;
+    }
+
+    .conferenceHeroIcon {
+        font-size: 20px;
+    }
+}

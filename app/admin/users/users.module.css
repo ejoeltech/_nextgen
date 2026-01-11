@@ -1,0 +1,283 @@
+.container {
+    padding: var(--space-4);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-4);
+}
+
+.title {
+    color: var(--color-deep-green);
+    margin: 0;
+}
+
+.createButton {
+    padding: var(--space-2) var(--space-3);
+    background-color: var(--color-bold-red);
+    color: white;
+    border-radius: var(--space-1);
+    font-weight: var(--weight-medium);
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.createButton:hover {
+    background-color: #A01218;
+}
+
+.loading,
+.empty {
+    text-align: center;
+    padding: var(--space-5);
+    color: var(--color-charcoal);
+}
+
+.empty p {
+    margin-bottom: var(--space-3);
+}
+
+.tableContainer {
+    background: white;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    background-color: var(--color-off-white);
+}
+
+.table th {
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    font-weight: var(--weight-medium);
+    color: var(--color-charcoal);
+    border-bottom: 2px solid var(--color-soft-gray);
+}
+
+.table td {
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-soft-gray);
+}
+
+.table tbody tr:hover {
+    background-color: var(--color-off-white);
+}
+
+.username {
+    font-weight: var(--weight-medium);
+    color: var(--color-deep-green);
+}
+
+.roleBadge {
+    padding: 4px var(--space-2);
+    border-radius: 12px;
+    font-size: var(--font-small);
+    font-weight: var(--weight-medium);
+}
+
+.rolesuper_admin {
+    background-color: #7C3AED;
+    color: white;
+}
+
+.roleadmin {
+    background-color: var(--color-deep-green);
+    color: white;
+}
+
+.rolemoderator {
+    background-color: var(--color-warm-gold);
+    color: var(--color-charcoal);
+}
+
+.roleviewer {
+    background-color: var(--color-soft-gray);
+    color: var(--color-charcoal);
+}
+
+.statusActive {
+    color: var(--color-deep-green);
+    font-weight: var(--weight-medium);
+}
+
+.statusInactive {
+    color: var(--color-soft-gray);
+}
+
+.actions {
+    display: flex;
+    gap: var(--space-1);
+}
+
+.editButton,
+.deleteButton {
+    padding: 6px var(--space-2);
+    border-radius: var(--space-1);
+    font-size: var(--font-small);
+    font-weight: var(--weight-medium);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    border: none;
+}
+
+.editButton {
+    background-color: var(--color-deep-green);
+    color: white;
+}
+
+.editButton:hover {
+    background-color: #0A4437;
+}
+
+.deleteButton {
+    background-color: var(--color-bold-red);
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #A01218;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-2);
+    }
+
+    .tableContainer {
+        overflow-x: auto;
+    }
+
+    .table {
+        min-width: 600px;
+    }
+}
+
+/* Form Styles */
+.form {
+    max-width: 600px;
+    background: white;
+    padding: var(--space-4);
+    border-radius: var(--radius-card);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-top: var(--space-3);
+}
+
+.formGroup {
+    margin-bottom: var(--space-3);
+}
+
+.label {
+    display: block;
+    font-weight: var(--weight-medium);
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-1);
+    font-size: var(--font-body);
+}
+
+.input,
+.select {
+    width: 100%;
+    padding: var(--space-2);
+    border: 2px solid var(--color-soft-gray);
+    border-radius: var(--space-1);
+    font-family: var(--font-family);
+    font-size: var(--font-body);
+    color: var(--color-charcoal);
+    transition: border-color 0.2s ease;
+}
+
+.input:focus,
+.select:focus {
+    outline: none;
+    border-color: var(--color-deep-green);
+}
+
+.input:disabled,
+.select:disabled {
+    background-color: var(--color-off-white);
+    cursor: not-allowed;
+}
+
+.hint {
+    display: block;
+    font-size: var(--font-small);
+    color: #666;
+    margin-top: var(--space-1);
+}
+
+.actions {
+    display: flex;
+    gap: var(--space-2);
+    justify-content: flex-end;
+    margin-top: var(--space-4);
+}
+
+.button {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-body);
+    font-weight: var(--weight-medium);
+    border-radius: var(--space-1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+    font-family: var(--font-family);
+}
+
+.buttonPrimary {
+    background-color: var(--color-bold-red);
+    color: var(--color-off-white);
+    border-color: var(--color-bold-red);
+}
+
+.buttonPrimary:hover:not(:disabled) {
+    background-color: #A01218;
+    border-color: #A01218;
+}
+
+.buttonPrimary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.buttonSecondary {
+    background-color: transparent;
+    border-color: var(--color-deep-green);
+    color: var(--color-deep-green);
+}
+
+.buttonSecondary:hover:not(:disabled) {
+    background-color: var(--color-deep-green);
+    color: var(--color-off-white);
+}
+
+.buttonSecondary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.checkboxGroup {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: var(--color-deep-green);
+}

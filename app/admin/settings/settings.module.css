@@ -1,0 +1,292 @@
+.container {
+    padding: var(--space-4);
+    max-width: 800px;
+}
+
+.title {
+    color: var(--color-deep-green);
+    margin-bottom: var(--space-4);
+}
+
+.section {
+    background: white;
+    padding: var(--space-4);
+    border-radius: var(--radius-card);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: var(--space-4);
+}
+
+.sectionTitle {
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-3);
+    font-size: var(--font-h3-desktop);
+}
+
+.form {
+    max-width: 500px;
+}
+
+.formGroup {
+    margin-bottom: var(--space-3);
+}
+
+.label {
+    display: block;
+    font-weight: var(--weight-medium);
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-1);
+    font-size: var(--font-body);
+}
+
+.input {
+    width: 100%;
+    padding: var(--space-2);
+    border: 2px solid var(--color-soft-gray);
+    border-radius: var(--space-1);
+    font-family: var(--font-family);
+    font-size: var(--font-body);
+    color: var(--color-charcoal);
+    transition: border-color 0.2s ease;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--color-deep-green);
+}
+
+.input:disabled {
+    background-color: var(--color-off-white);
+    cursor: not-allowed;
+}
+
+.hint {
+    display: block;
+    font-size: var(--font-small);
+    color: #666;
+    margin-top: var(--space-1);
+}
+
+.submitButton {
+    padding: var(--space-2) var(--space-4);
+    background-color: var(--color-bold-red);
+    color: var(--color-off-white);
+    border: none;
+    border-radius: var(--space-1);
+    font-family: var(--font-family);
+    font-size: var(--font-body);
+    font-weight: var(--weight-medium);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submitButton:hover:not(:disabled) {
+    background-color: #A01218;
+}
+
+.submitButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.hashResult {
+    margin-top: var(--space-4);
+    padding: var(--space-3);
+    background-color: rgba(15, 92, 74, 0.05);
+    border: 2px solid var(--color-deep-green);
+    border-radius: var(--space-1);
+}
+
+.hashTitle {
+    color: var(--color-deep-green);
+    margin-bottom: var(--space-2);
+    font-size: var(--font-h3-desktop);
+}
+
+.hashInstructions {
+    margin-bottom: var(--space-2);
+    color: var(--color-charcoal);
+}
+
+.instructionsList {
+    margin-bottom: var(--space-3);
+    padding-left: var(--space-3);
+    color: var(--color-charcoal);
+}
+
+.instructionsList li {
+    margin-bottom: var(--space-1);
+}
+
+.instructionsList code {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+}
+
+.hashBox {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+    background-color: white;
+    padding: var(--space-2);
+    border-radius: var(--space-1);
+    border: 1px solid var(--color-soft-gray);
+}
+
+.hashCode {
+    flex: 1;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    word-break: break-all;
+    color: var(--color-charcoal);
+}
+
+.copyButton {
+    padding: var(--space-1) var(--space-2);
+    background-color: var(--color-deep-green);
+    color: white;
+    border: none;
+    border-radius: var(--space-1);
+    font-size: var(--font-small);
+    font-weight: var(--weight-medium);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.copyButton:hover {
+    background-color: #0A4437;
+}
+
+/* Logo Management Section */
+.logoSection {
+    display: flex;
+    gap: var(--space-4);
+    align-items: flex-start;
+}
+
+.logoPreview {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--color-soft-gray);
+    border-radius: var(--space-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-off-white);
+    padding: var(--space-2);
+}
+
+.logoImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.logoControls {
+    flex: 1;
+}
+
+.fileInput {
+    width: 100%;
+    padding: var(--space-2);
+    border: 2px solid var(--color-soft-gray);
+    border-radius: var(--space-1);
+    font-family: var(--font-family);
+    font-size: var(--font-body);
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.fileInput:focus {
+    outline: none;
+    border-color: var(--color-deep-green);
+}
+
+.fileInput:disabled {
+    background-color: var(--color-off-white);
+    cursor: not-allowed;
+}
+
+.logoButtons {
+    display: flex;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+}
+
+.uploadButton,
+.resetButton {
+    padding: var(--space-2) var(--space-3);
+    border: none;
+    border-radius: var(--space-1);
+    font-family: var(--font-family);
+    font-size: var(--font-body);
+    font-weight: var(--weight-medium);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.uploadButton {
+    background-color: var(--color-deep-green);
+    color: white;
+}
+
+.uploadButton:hover:not(:disabled) {
+    background-color: #0A4437;
+}
+
+.uploadButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.resetButton {
+    background-color: var(--color-soft-gray);
+    color: var(--color-charcoal);
+}
+
+.resetButton:hover:not(:disabled) {
+    background-color: #B8B8B8;
+}
+
+.resetButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: var(--space-2);
+    }
+
+    .section {
+        padding: var(--space-3);
+    }
+
+    .hashBox {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .copyButton {
+        width: 100%;
+    }
+
+    .logoSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoButtons {
+        flex-direction: column;
+    }
+
+    .uploadButton,
+    .resetButton {
+        width: 100%;
+    }
+}

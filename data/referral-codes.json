@@ -1,0 +1,302 @@
+[
+    {
+        "code": "NGN01",
+        "ownerName": "Adebayo Johnson",
+        "ownerPhone": "+234 801 234 5001",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN02",
+        "ownerName": "Chioma Okafor",
+        "ownerPhone": "+234 802 345 6002",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN03",
+        "ownerName": "Ibrahim Musa",
+        "ownerPhone": "+234 803 456 7003",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN04",
+        "ownerName": "Blessing Eze",
+        "ownerPhone": "+234 804 567 8004",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN05",
+        "ownerName": "Yusuf Abdullahi",
+        "ownerPhone": "+234 805 678 9005",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN06",
+        "ownerName": "Ngozi Nwosu",
+        "ownerPhone": "+234 806 789 0006",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN07",
+        "ownerName": "Emeka Obi",
+        "ownerPhone": "+234 807 890 1007",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN08",
+        "ownerName": "Fatima Bello",
+        "ownerPhone": "+234 808 901 2008",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN09",
+        "ownerName": "Tunde Adeyemi",
+        "ownerPhone": "+234 809 012 3009",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN10",
+        "ownerName": "Amina Hassan",
+        "ownerPhone": "+234 810 123 4010",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN11",
+        "ownerName": "Chukwudi Okoro",
+        "ownerPhone": "+234 811 234 5011",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN12",
+        "ownerName": "Aisha Mohammed",
+        "ownerPhone": "+234 812 345 6012",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN13",
+        "ownerName": "Oluwaseun Ajayi",
+        "ownerPhone": "+234 813 456 7013",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN14",
+        "ownerName": "Zainab Usman",
+        "ownerPhone": "+234 814 567 8014",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN15",
+        "ownerName": "Kelechi Nnamdi",
+        "ownerPhone": "+234 815 678 9015",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN16",
+        "ownerName": "Hauwa Garba",
+        "ownerPhone": "+234 816 789 0016",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN17",
+        "ownerName": "Oluwatobi Adebisi",
+        "ownerPhone": "+234 817 890 1017",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN18",
+        "ownerName": "Maryam Suleiman",
+        "ownerPhone": "+234 818 901 2018",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN19",
+        "ownerName": "Chinedu Onyeka",
+        "ownerPhone": "+234 819 012 3019",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN20",
+        "ownerName": "Halima Ibrahim",
+        "ownerPhone": "+234 820 123 4020",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN21",
+        "ownerName": "Ifeanyi Okonkwo",
+        "ownerPhone": "+234 821 234 5021",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN22",
+        "ownerName": "Rukayat Adamu",
+        "ownerPhone": "+234 822 345 6022",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN23",
+        "ownerName": "Obinna Chukwu",
+        "ownerPhone": "+234 823 456 7023",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN24",
+        "ownerName": "Safiya Aliyu",
+        "ownerPhone": "+234 824 567 8024",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN25",
+        "ownerName": "Uzoma Nnaji",
+        "ownerPhone": "+234 825 678 9025",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN26",
+        "ownerName": "Khadija Yusuf",
+        "ownerPhone": "+234 826 789 0026",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN27",
+        "ownerName": "Chidi Eze",
+        "ownerPhone": "+234 827 890 1027",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN28",
+        "ownerName": "Hadiza Bala",
+        "ownerPhone": "+234 828 901 2028",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN29",
+        "ownerName": "Nnamdi Okafor",
+        "ownerPhone": "+234 829 012 3029",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN30",
+        "ownerName": "Asma'u Musa",
+        "ownerPhone": "+234 830 123 4030",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN31",
+        "ownerName": "Ikenna Nwankwo",
+        "ownerPhone": "+234 831 234 5031",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN32",
+        "ownerName": "Jamila Ahmed",
+        "ownerPhone": "+234 832 345 6032",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN33",
+        "ownerName": "Chukwuma Obi",
+        "ownerPhone": "+234 833 456 7033",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN34",
+        "ownerName": "Bilkisu Lawal",
+        "ownerPhone": "+234 834 567 8034",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN35",
+        "ownerName": "Ebuka Onyeka",
+        "ownerPhone": "+234 835 678 9035",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN36",
+        "ownerName": "Ramatu Bello",
+        "ownerPhone": "+234 836 789 0036",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN37",
+        "ownerName": "Uchenna Nwosu",
+        "ownerPhone": "+234 837 890 1037",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN38",
+        "ownerName": "Sumayyah Hassan",
+        "ownerPhone": "+234 838 901 2038",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN39",
+        "ownerName": "Chukwuemeka Okonkwo",
+        "ownerPhone": "+234 839 012 3039",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN40",
+        "ownerName": "Nafisa Abdullahi",
+        "ownerPhone": "+234 840 123 4040",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN41",
+        "ownerName": "Obiora Eze",
+        "ownerPhone": "+234 841 234 5041",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN42",
+        "ownerName": "Zahra Mohammed",
+        "ownerPhone": "+234 842 345 6042",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN43",
+        "ownerName": "Kenechukwu Nnamdi",
+        "ownerPhone": "+234 843 456 7043",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN44",
+        "ownerName": "Amal Usman",
+        "ownerPhone": "+234 844 567 8044",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN45",
+        "ownerName": "Chigozie Okafor",
+        "ownerPhone": "+234 845 678 9045",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN46",
+        "ownerName": "Hauwa'u Garba",
+        "ownerPhone": "+234 846 789 0046",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN47",
+        "ownerName": "Nkechi Onyeka",
+        "ownerPhone": "+234 847 890 1047",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN48",
+        "ownerName": "Sadiya Suleiman",
+        "ownerPhone": "+234 848 901 2048",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN49",
+        "ownerName": "Chukwudi Okoro",
+        "ownerPhone": "+234 849 012 3049",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+        "code": "NGN50",
+        "ownerName": "Zulaihat Ibrahim",
+        "ownerPhone": "+234 850 123 4050",
+        "createdAt": "2026-01-11T10:00:00.000Z"
+    }
+]
