@@ -12,6 +12,11 @@ interface Conference {
     qrCode: string;
     flierUrl?: string;
     advertiseOnHomepage?: boolean;
+    seo?: {
+        metaTitle?: string;
+        metaDescription?: string;
+        keywords?: string[];
+    };
     createdAt: string;
     updatedAt: string;
 }
@@ -68,7 +73,7 @@ export async function GET() {
 export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
-        const { id, title, date, venue, description, flierData, flierName, advertiseOnHomepage } = body;
+        const { id, title, date, venue, description, flierData, flierName, advertiseOnHomepage, seo } = body;
 
         // Validate required fields
         if (!id || !title || !date || !venue || !description) {
@@ -126,6 +131,7 @@ export async function POST(request: NextRequest) {
             qrCode,
             flierUrl,
             advertiseOnHomepage: advertiseOnHomepage || false,
+            seo: seo || undefined,
             createdAt: new Date().toISOString(),
             updatedAt: new Date().toISOString(),
         };

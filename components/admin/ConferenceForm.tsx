@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './ConferenceForm.module.css';
 import Notification, { NotificationType } from './Notification';
+import SEOPanel from './SEOPanel';
 
 interface ConferenceFormProps {
     conferenceId?: string;
@@ -15,6 +16,11 @@ interface ConferenceFormProps {
         description: string;
         flierUrl?: string;
         advertiseOnHomepage?: boolean;
+        seo?: {
+            metaTitle?: string;
+            metaDescription?: string;
+            keywords?: string[];
+        };
     };
 }
 
@@ -33,6 +39,11 @@ export default function ConferenceForm({ conferenceId, initialData }: Conference
     const [flierFile, setFlierFile] = useState<File | null>(null);
     const [flierPreview, setFlierPreview] = useState<string>(initialData?.flierUrl || '');
     const [advertiseOnHomepage, setAdvertiseOnHomepage] = useState(initialData?.advertiseOnHomepage || false);
+    const [seoData, setSeoData] = useState({
+        metaTitle: initialData?.seo?.metaTitle || '',
+        metaDescription: initialData?.seo?.metaDescription || '',
+        keywords: initialData?.seo?.keywords || [],
+    });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [notification, setNotification] = useState<NotificationState | null>(null);
 
@@ -57,8 +68,16 @@ export default function ConferenceForm({ conferenceId, initialData }: Conference
             const url = conferenceId ? `/api/admin/conferences/${conferenceId}` : '/api/admin/conferences';
             const method = conferenceId ? 'PUT' : 'POST';
 
-            // Prepare request body with flier data
-            const requestBody: any = { id, title, date, venue, description, advertiseOnHomepage };
+            // Prepare request body with flier data and SEO
+            const requestBody: any = {
+                id,
+                title,
+                date,
+                venue,
+                description,
+                advertiseOnHomepage,
+                seo: seoData
+            };
 
             // If a new flier was uploaded, include it as base64
             if (flierFile) {
@@ -178,6 +197,14 @@ export default function ConferenceForm({ conferenceId, initialData }: Conference
                         placeholder="Enter conference description..."
                     />
                 </div>
+
+                {/* SEO Panel */}
+                <SEOPanel
+                    content={`${title}\n\n${description}`}
+                    type="conference"
+                    initialValues={seoData}
+                    onChange={(newSeoData) => setSeoData(newSeoData)}
+                />
 
                 <div className={styles.formGroup}>
                     <label htmlFor="flier" className={styles.label}>
