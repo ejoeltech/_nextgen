@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './SEOPanel.module.css';
 
 interface SEOPanelProps {
@@ -144,14 +144,14 @@ export default function SEOPanel({ content, type, initialValues, onChange }: SEO
         onChange({ metaTitle, metaDescription, keywords: value.split(',').map(k => k.trim()).filter(k => k) });
     };
 
-    // Calculate score on mount and when values change
-    useState(() => {
+    // Calculate score when values change
+    useEffect(() => {
         const newScore = calculateScore();
         setScore(newScore);
         setSuggestions(generateSuggestions());
-    });
+    }, [metaTitle, metaDescription, keywords, content]);
 
-    const currentScore = calculateScore();
+    const currentScore = score !== null ? score : calculateScore();
     const scoreColor = currentScore >= 80 ? '#0F5C4A' : currentScore >= 60 ? '#F59E0B' : '#C01F28';
 
     return (
