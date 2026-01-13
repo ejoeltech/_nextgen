@@ -21,6 +21,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
         { href: '/admin/registrations', label: 'Registrations', icon: '📋' },
         { href: '/admin/referral-codes', label: 'Referral Codes', icon: '🎫' },
         { href: '/admin/users', label: 'Users', icon: '👥' },
+        { href: '/admin/ai-settings', label: 'AI Settings', icon: '🤖' },
         { href: '/admin/settings', label: 'Settings', icon: '⚙️' },
     ];
 
