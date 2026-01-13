@@ -58,7 +58,9 @@ export async function getSession(): Promise<SessionPayload | null> {
 
 // Verify admin credentials
 export async function verifyAdminCredentials(username: string, password: string): Promise<boolean> {
-  const adminUsername = process.env.ADMIN_USERNAME || 'admin';
+  // Normalize username input
+  const normalizedUsername = username.trim();
+  const adminUsername = (process.env.ADMIN_USERNAME || 'admin').trim();
   let adminPasswordHash = process.env.ADMIN_PASSWORD_HASH;
 
   // Support base64-encoded hash for Windows compatibility
@@ -69,7 +71,10 @@ export async function verifyAdminCredentials(username: string, password: string)
 
   // Debug logging
   console.log('=== Auth Debug ===');
-  console.log('ADMIN_USERNAME:', adminUsername);
+  console.log('Input username:', JSON.stringify(username));
+  console.log('Normalized username:', JSON.stringify(normalizedUsername));
+  console.log('Expected username:', JSON.stringify(adminUsername));
+  console.log('Username match:', normalizedUsername === adminUsername);
   console.log('ADMIN_PASSWORD_HASH exists:', !!adminPasswordHash);
   console.log('ADMIN_PASSWORD_HASH length:', adminPasswordHash?.length || 0);
   console.log('ADMIN_PASSWORD_HASH value:', adminPasswordHash);
@@ -81,7 +86,7 @@ export async function verifyAdminCredentials(username: string, password: string)
     return false;
   }
 
-  if (username !== adminUsername) {
+  if (normalizedUsername !== adminUsername) {
     console.log('Username mismatch');
     return false;
   }

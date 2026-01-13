@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "user-1768201715552",
+    "username": "switchild",
+    "email": "email@thenextgen.com.ng",
+    "passwordHash": "$2b$10$V32ADJzKQAtbc79FW9x7lueV/RF3Jt16w0I9JBziW2aWpwDbX.4re",
+    "role": "admin",
+    "createdAt": "2026-01-12T07:08:35.552Z",
+    "updatedAt": "2026-01-12T07:08:35.555Z",
+    "isActive": true
+  }
+]
